@@ -1,0 +1,19 @@
+site_name: 小寒文档中心
+theme: 
+  name: material
+  language: 'zh'
+extra:
+  search:
+    language: 'jp'
+markdown_extensions:
+  - meta
+  - smarty
+  - admonition
+  - codehilite
+  - footnotes
+  - toc:
+      permalink: true
+
+nav:
+  - 主页: index.md
+

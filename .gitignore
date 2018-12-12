@@ -1,0 +1,9 @@
+#排除文件夹
+site/
+.vscode/*
+
+#排除文件
+*.zip
+
+#例外文件
+!.vscode/tasks.json
