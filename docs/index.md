@@ -2,16 +2,26 @@
 
 文档使用mkdocs构建, 了解mkdocs可以浏览 [mkdocs.org](https://mkdocs.org).
 
-## Commands
+## 系列教程
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
+### vrep仿真
 
-## Project layout
+#### 寻迹小车
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+#### 平衡车
+
+#### 倒立摆
+
+#### 机械臂
+
+#### 3d打印机
+
+#### 雕刻机
+
+#### SLAM导航
+
+#### 四足机器人
+
+## 日常记录
+
+### linux操作
