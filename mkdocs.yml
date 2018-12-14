@@ -3,6 +3,9 @@ theme:
   name: material
   language: 'zh'
 extra:
+  social:
+    - type: github
+      link: https://github.com/thelittlehan/OneDocCenter
   search:
     language: 'jp'
 markdown_extensions:
