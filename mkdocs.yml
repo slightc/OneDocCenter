@@ -24,5 +24,8 @@ nav:
   - 主页: index.md
   - 日常记录:
     - Linux:
-      - 添加桌面快捷方式: notebook/linux/AddDesktopLink.md
+      - 添加桌面快捷方式: notebook/linux/addDesktopLink.md
+      - 开机运行: notebook/linux/startingUpRuning.md
+      - 系统配置: notebook/linux/systemConfig.md
+      - 部署gitlab: notebook/linux/deployGitlab.md
 
