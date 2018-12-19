@@ -179,18 +179,78 @@
       
       
 
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      vrep
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        vrep
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1">
+    
+    <label class="md-nav__link" for="nav-2-1">
+      基础教程
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-1">
+        基础教程
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../vrep/Basics/Chapter-01/" title="简介" class="md-nav__link">
+      简介
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
   
 
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
     
-    <label class="md-nav__link" for="nav-2">
+    <label class="md-nav__link" for="nav-3">
       日常记录
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-2">
+      <label class="md-nav__title" for="nav-3">
         日常记录
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -205,13 +265,13 @@
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1" checked>
     
-    <label class="md-nav__link" for="nav-2-1">
+    <label class="md-nav__link" for="nav-3-1">
       Linux
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-2-1">
+      <label class="md-nav__title" for="nav-3-1">
         Linux
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -304,8 +364,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../deployGitlab/" title="部署Gitlab" class="md-nav__link">
-      部署Gitlab
+    <a href="../deployGitlab/" title="部署gitlab" class="md-nav__link">
+      部署gitlab
     </a>
   </li>
 
@@ -373,23 +433,23 @@
                 
                 <h1 id="_1">设置开机运行<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
 <h2 id="synergy">设置synergy客户端开机启动<a class="headerlink" href="#synergy" title="Permanent link">&para;</a></h2>
-<p>在<code>应用中心</code>搜索: <code>启动应用程序</code></p>
-<p>点击添加, 名称随意填写, 如<code>synergy</code></p>
+<p>在<code class="codehilite">应用中心</code>搜索: <code class="codehilite">启动应用程序</code></p>
+<p>点击添加, 名称随意填写, 如<code class="codehilite">synergy</code></p>
 <p>命令填写</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>synergyc 主机IP
 </pre></div>
 </td></tr></table>
 
-<p>将<code>主机IP</code>替换为自己服务端的IP</p>
-<p>并在 <code>系统设置&gt;用户设置</code> 中点击解锁, 打开自动登录开关, 否则启动输入密码后才能启动<code>synergy</code></p>
+<p>将<code class="codehilite">主机IP</code>替换为自己服务端的IP</p>
+<p>并在 <code class="codehilite">系统设置&gt;用户设置</code> 中点击解锁, 打开自动登录开关, 否则启动输入密码后才能启动<code class="codehilite">synergy</code></p>
 <h2 id="screen">设置开机screen后台运行任务<a class="headerlink" href="#screen" title="Permanent link">&para;</a></h2>
-<p>建立一个脚本, 任意命名, 如 <code>screenStart.sh</code></p>
+<p>建立一个脚本, 任意命名, 如 <code class="codehilite">screenStart.sh</code></p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>screen -S <span class="sb">`</span>name<span class="sb">`</span> -dm <span class="sb">`</span>run app<span class="sb">`</span>
 </pre></div>
 </td></tr></table>
 
-<p><code>name</code> 填写后台运行标识的名字, <code>run app</code> 写自己需要运行的应用</p>
-<p>将<code>bash screenStart.sh</code>添加到<code>启动应用程序</code>中,就可以在开机运行后台任务了</p>
+<p><code class="codehilite">name</code> 填写后台运行标识的名字, <code class="codehilite">run app</code> 写自己需要运行的应用</p>
+<p>将<code class="codehilite">bash screenStart.sh</code>添加到<code class="codehilite">启动应用程序</code>中,就可以在开机运行后台任务了</p>
 <blockquote>
 <p>如建立一个后台http服务
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
@@ -397,8 +457,8 @@
 screen -S HTTPServer -dm python -m SimpleHTTPServer
 </pre></div>
 </td></tr></table>
-将在<code>~/www/</code>目录下启动一个http服务
-使用<code>screen -ls</code>可以看到存在<code>HTTPServer</code>的后台运行服务</p>
+将在<code class="codehilite">~/www/</code>目录下启动一个http服务
+使用<code class="codehilite">screen -ls</code>可以看到存在<code class="codehilite">HTTPServer</code>的后台运行服务</p>
 </blockquote>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -502,6 +562,10 @@ screen -S HTTPServer -dm python -m SimpleHTTPServer
         
       
       <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
+      
+        <script src="../../../js/extra.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
       
     
     

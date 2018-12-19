@@ -36,7 +36,7 @@
     
     
       
-        <title>部署Gitlab - 小寒文档中心</title>
+        <title>部署gitlab - 小寒文档中心</title>
       
     
     
@@ -98,7 +98,7 @@
                 小寒文档中心
               </span>
               <span class="md-header-nav__topic">
-                部署Gitlab
+                部署gitlab
               </span>
             
           
@@ -179,18 +179,78 @@
       
       
 
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      vrep
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        vrep
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1">
+    
+    <label class="md-nav__link" for="nav-2-1">
+      基础教程
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-1">
+        基础教程
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../vrep/Basics/Chapter-01/" title="简介" class="md-nav__link">
+      简介
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
   
 
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
     
-    <label class="md-nav__link" for="nav-2">
+    <label class="md-nav__link" for="nav-3">
       日常记录
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-2">
+      <label class="md-nav__title" for="nav-3">
         日常记录
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -205,13 +265,13 @@
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1" checked>
     
-    <label class="md-nav__link" for="nav-2-1">
+    <label class="md-nav__link" for="nav-3-1">
       Linux
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-2-1">
+      <label class="md-nav__title" for="nav-3-1">
         Linux
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -268,11 +328,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        部署Gitlab
+        部署gitlab
       </label>
     
-    <a href="./" title="部署Gitlab" class="md-nav__link md-nav__link--active">
-      部署Gitlab
+    <a href="./" title="部署gitlab" class="md-nav__link md-nav__link--active">
+      部署gitlab
     </a>
     
       
@@ -385,8 +445,8 @@ sudo apt-get install -y curl openssh-server ca-certificates
 </pre></div>
 </td></tr></table>
 
-<p>在Postfix的安装过程中,可能出现配置界面.选择 <code>Internet Site</code> 回车确定.
-使用服务器外置的DNS作为 <code>mail name</code>, 并回车确定.
+<p>在Postfix的安装过程中,可能出现配置界面.选择 <code class="codehilite">Internet Site</code> 回车确定.
+使用服务器外置的DNS作为 <code class="codehilite">mail name</code>, 并回车确定.
 如果出现额外的窗口, 直接使用默认值, 回车确定.</p>
 <h2 id="2-gitlab">2. 下载GitLab安装文件并安装<a class="headerlink" href="#2-gitlab" title="Permanent link">&para;</a></h2>
 <p>下载GitLab安装文件</p>
@@ -394,7 +454,7 @@ sudo apt-get install -y curl openssh-server ca-certificates
 </pre></div>
 </td></tr></table>
 
-<p>安装GitLab, 将<code>http://gitlab.example.com</code>改为自己可访问的链接</p>
+<p>安装GitLab, 将<code class="codehilite">http://gitlab.example.com</code>改为自己可访问的链接</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>sudo EXTERNAL_URL=&quot;http://gitlab.example.com&quot; apt-get install gitlab-ee
 </pre></div>
 </td></tr></table>
@@ -482,6 +542,10 @@ sudo apt-get install -y curl openssh-server ca-certificates
         
       
       <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
+      
+        <script src="../../../js/extra.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
       
     
     
